@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 900px) {
-    i {
-        display: block;
+@media screen and (max-width: 700px) {
+    i.material-icons {
+        display: inline-block;
+    }
+
+    menu {
+        display: none;
     }
 }
