@@ -35,11 +35,13 @@ header {
 }
 
 i.material-icons {
-    background-color: var(--corVerdeEsc);
+    background-color: #7d8c0d1c;
     color: var(--corAzul);
     padding: 7px;
+    justify-content: flex-end;
     cursor: pointer;
     display: none;
+    border-radius: 4 px;
 }
 
 header > menu {
