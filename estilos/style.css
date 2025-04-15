@@ -51,14 +51,17 @@ header > menu > ul > li > a {
     color: var(--corVerdeEsc);
     font-family: var(--fonte-destaque);
     text-decoration: none;
+    font-size: 18px;
 }
 
 header > menu > ul > li > a:hover {
     font-weight: bold;
+    color: var(--corAzul);
+    cursor: pointer;
 }
 
 header > menu > ul > li > a:active {
-    text-decoration: underline;
+    font-size: 14px;
 }
 
 main {
@@ -74,9 +77,16 @@ main > h1 {
     padding-bottom: 20px;
 }
 
+main > h1.titulo-comum {
+    color: var(--corVerdeEsc);
+    text-align: center;
+    padding: 30px;
+}
+
 main > div#conteudo-principal {
-    padding: 20px;
+    padding: 25px;
     display: flex;
+    flex-flow: row wrap;
 }
 
 
@@ -85,9 +95,12 @@ main > div#conteudo-principal > div.paragrafo {
     font-size: 20px;
     text-align: justify;
     text-indent: 3px;
+    padding: 20px;
 }
 
-main > div#conteudo-principal > img {
-    padding-right: 30px;
-    width: auto;
+main > div#conteudo-principal > div.img-elementos {
+    height: 250px;
+    width: 281px;
+    background-image: url(../imagens/imagem-planta-home.png);
+    margin: auto;
 }

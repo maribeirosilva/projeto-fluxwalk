@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+main > h1.titulo-comum {
+    color: var(--corVerdeEsc);
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+main > div#participantes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px; /*A propriedade gap em CSS é usada para criar espaçamento entre os elementos filhos de um contêiner, seja ele Flexbox, Grid ou multi-column.*/
+}
+
+main > div#participantes > div.fundo-participante {
+    background-color: #4a591691;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+main > div#participantes > div.fundo-participante > img.img-p {
+    width: 100%;
+}
+
+main > div#participantes > div.fundo-participante > p {
+    padding: 16px;
+}
+
+main > div#participantes > div.fundo-participante > a.botao-linkedin {
+    width: 100%;
+}
