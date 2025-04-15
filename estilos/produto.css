@@ -1,6 +1,61 @@
 @charset "UTF-8";
 
-main > h1.titulo-comum {
-    color: var(--corVerdeEsc);
+
+:root {
+    --corAzul: #5D78BC;
+    --corVerdeEsc: #4B5916;
+    --corVerde: #7D8C0D;
+    --corBege: #BFA78A;
+
+    --fonte-padrao: 'Lexend Deca', sans-serif;
+    --fonte-destaque: 'Bona Nova SC', serif;
+}
+
+div.conteudo-p {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 23px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+p.ideia {
+    font-size: 18px;
+    max-width: 85ch;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+ol {
+    padding-left: 16px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.pubA {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--corBege);
+}
+
+a.empresa {
+    text-decoration: none;
+    color: #2f406b;
+    transition-duration: .7s;
+}
+
+a:hover {
+    background-color: #5d78bc3f;
+    color: #455ea0;
+    border-radius: 7px;
 }

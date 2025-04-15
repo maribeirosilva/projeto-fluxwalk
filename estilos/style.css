@@ -89,7 +89,7 @@ main > h1 {
 main > h1.titulo-comum {
     color: var(--corVerdeEsc);
     text-align: center;
-    padding: 30px;
+    padding: 25px;
 }
 
 main > div#conteudo-principal {
