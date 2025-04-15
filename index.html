@@ -6,12 +6,14 @@
     <title>FluxWalk</title>
     <link rel="shortcut icon" href="imagens/lampada-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/contato.css">
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="conteudo ">
         <header>
-            <menu>
+            <i class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="itens">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produto.html" target="_self">Produto</a></li>
@@ -29,5 +31,14 @@
                     <div class="img-elementos"></div>
                 </div>
             </main>
+            <script>
+                function clickMenu() {
+                    if (itens.style.display == 'block') {
+                        itens.style.display = 'none'
+                    } else {
+                        itens.style.display = 'block'
+                    }
+                }
+            </script>
 </body>
 </html>

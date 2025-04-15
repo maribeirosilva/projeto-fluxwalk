@@ -5,23 +5,26 @@ main > div#participantes {
     flex-flow: row wrap;
     justify-content: center;
     gap: 30px; /*A propriedade gap em CSS é usada para criar espaçamento entre os elementos filhos de um contêiner, seja ele Flexbox, Grid ou multi-column.*/
+    transition-duration: .7s;
 }
 
 main > div#participantes > div.fundo-participante {
-    background-color: #4a591691;
+    background-color: #4a5916b9;
     padding: 20px;
     text-align: center;
     width: 200px;
+    border-radius: 6px;
 }
 
 main > div#participantes > div.fundo-participante > img.img-p {
     width: 100%;
+    border-radius: 8px;
 }
 
 main > div#participantes > div.fundo-participante > p {
     padding: 16px;
 }
 
-main > div#participantes > div.fundo-participante > a.botao-linkedin {
+main > div#participantes > div.fundo-participante > a.botao-contato {
     width: 100%;
 }

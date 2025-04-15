@@ -34,6 +34,14 @@ header {
     margin: 0 auto;
 }
 
+i.material-icons {
+    background-color: var(--corVerdeEsc);
+    color: var(--corAzul);
+    padding: 7px;
+    cursor: pointer;
+    display: none;
+}
+
 header > menu {
     background-color: black;
     border-bottom: 2px solid var(--corAzul);
@@ -52,6 +60,7 @@ header > menu > ul > li > a {
     font-family: var(--fonte-destaque);
     text-decoration: none;
     font-size: 18px;
+    transition-duration: .7s;
 }
 
 header > menu > ul > li > a:hover {
@@ -87,6 +96,7 @@ main > div#conteudo-principal {
     padding: 25px;
     display: flex;
     flex-flow: row wrap;
+    transition-duration: .7s;
 }
 
 
