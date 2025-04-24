@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FluxWalk</title>
-    <link rel="shortcut icon" href="imagens/lampada-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/materiais.css">
     <link rel="stylesheet" href="estilos/mobile.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <menu id="itens">
             <ul>
@@ -23,8 +24,124 @@
     <main>
         <i class="material-icons" onclick="clickMenu()">menu</i>
         <h1>Materiais</h1>
+        <section id="peças">
+                <div class="material">
+                    <h2>KNN (K₁₋ₓNaₓNbO₃)</h2>
+                    <br>
+                    <p>O KNN (K₁₋ₓNaₓNbO₃) é uma cerâmica piezoelétrica livre de chumbo usada em sensores e atuadores. Suas propriedades elétricas e mecânicas mudam com o valor de 𝑥, sendo uma alternativa ambientalmente segura ao PZT.</p>
+                </div>
+                <div class="material">
+                    <h2>Eletrodos condutores</h2>
+                    <br>
+                    <p>Ag (prata) e Cu (cobre) são metais altamente condutivos. Prata é o melhor condutor elétrico, mas seu alto custo limita o uso em aplicações específicas. Cobre é amplamente usado devido ao equilíbrio entre excelente condutividade, menor custo e resistência à corrosão.</p>
+                </div>
+                <div class="material">
+                    <h2>Fita condutora flexívels</h2>
+                    <br>
+                    <p>Fita condutora flexível é um material condutivo e maleável, usado para conduzir eletricidade em aplicações que exigem flexibilidade, como dispositivos eletrônicos e conexões em espaços compactos.</p>
+                </div>
+                <div class="material">
+                    <h2>Polímero técnico</h2>
+                    <br>
+                    <p>PU (poliuretano) e EPDM (borracha de etileno-propileno-dieno) são polímeros técnicos usados em aplicações industriais devido à sua durabilidade, resistência e flexibilidade. PU é ideal para revestimentos e adesivos; EPDM é usado em vedações e isolamentos.</p>
+                </div>
+                <div class="material">
+                    <h2>Alumínio ou aço inoxidávelleve</h2>
+                    <br>
+                    <p>Alumínio é leve e resistente à corrosão, sendo ideal para aplicações que exigem baixo peso. Aço inoxidável é mais durável e resistente, usado quando força e longevidade são essenciais.</p>
+                </div>
+                <div class="material">
+                    <h2>Substrato dielétrico</h2>
+                    <br>
+                    <p>Um substrato dielétrico é um material isolante usado principalmente para suportar circuitos e componentes eletrônicos, sem conduzir eletricidade. Ele oferece propriedades como baixa perda dielétrica e alta estabilidade elétrica, sendo essencial em dispositivos como capacitores, placas de circuito impresso (PCBs) e antenas.</p>
+                </div>
+                <div class="material">
+                    <h2>Adesivos condutivos/epóxis</h2>
+                    <br>
+                    <p>Adesivos condutivos, como epóxis, são usados para aderir superfícies enquanto conduzem eletricidade ou calor. Eles substituem soldas em conexões sensíveis e são empregados na montagem de eletrônicos e reparos industriais.</p>
+                </div>
+                <div class="material">
+                    <h2>Microcontroladores</h2>
+                    <br>
+                    <p>Microcontroladores, como ESP32 e STM32, são chips compactos que combinam processador, memória e periféricos, sendo usados para controle eficiente em sistemas embarcados. O ESP32 destaca-se por conectividade Wi-Fi/Bluetooth, enquanto o STM32 é conhecido por sua alta performance e versatilidade.<p>
+                </div>
+                <div class="material">
+                    <h2>Sensor de pressão/força</h2>
+                    <br>
+                    <p>Sensores de pressão ou força, como o FSR (Force Sensitive Resistor), funcionam detectando a força aplicada na sua superfície e convertendo essa força em sinal elétrico. O FSR reduz sua resistência elétrica quando submetido à pressão, permitindo medir a intensidade aplicada.<p>
+                </div>
+                <div class="material">
+                    <h2>Sensor de temperatura e umidade</h2>
+                    <br>
+                    <p>O DHT22 é um sensor que mede temperatura e umidade, conhecido por sua precisão e facilidade de uso. Ele contém um sensor capacitivo para medir umidade e um termistor para temperatura, enviando os dados por meio de um sinal digital.<p>
+                </div>
+                <div class="material">
+                    <h2>Acelerômetro</h2>
+                    <br>
+                    <p>O acelerômetro é um sensor que mede aceleração em um ou mais eixos, detectando mudanças de movimento e inclinação. Ele funciona convertendo essas variações em sinais elétricos, sendo usado em dispositivos como smartphones, wearables, drones, veículos e sistemas de navegação.<p>
+                </div>
+                <div class="material">
+                    <h2>Circuito retificador e capacitor</h2>
+                    <br>
+                    <p>Um circuito retificador converte corrente alternada (AC) em corrente contínua (DC), e um capacitor suaviza a saída, tornando a corrente mais estável. Juntos, são essenciais em fontes de alimentação.<p>
+                </div>
+                <div class="material">
+                    <h2>Módulo de transmissão</h2>
+                    <br>
+                    <p>Módulos como Lora ou Wi-Fi, são módulos essenciais para conectar equipamentos em redes modernas, adaptando-se conforme a necessidade de alcance ou consumo energético.<p>
+                </div>
+                <div class="material">
+                    <h2>Bateria recarregável (Li-ion)</h2>
+                    <br>
+                    <p>São amplamente utilizadas devido à sua alta densidade de energia, durabilidade e capacidade de recarga. Elas funcionam armazenando energia elétrica em compostos químicos de lítio, permitindo um fornecimento constante de energia.<p>
+                </div>
+                <div class="material">
+                    <h2>Revestimento Emborrachado</h2>
+                    <br>
+                    <p>Revestimentos emborrachados são materiais aplicados em superfícies com a finalidade de oferecer proteção, resistência e aderência. Eles criam uma camada flexível e impermeável, sendo amplamente usados em diversas áreas como ferramentas industriais, telhados e dispositivos eletrônicos.<p>
+                </div>
+                <div class="material">
+                    <h2>Tampa modular</h2>
+                    <br>
+                    <p>Tampas modulares podem ser feitas de resina, madeira técnica ou compósitos, cada material oferecendo características únicas. A resina é leve, resistente à corrosão e possui um acabamento uniforme, sendo ideal para ambientes externos ou úmidos. A madeira técnica apresenta durabilidade, estabilidade dimensional e uma estética sofisticada, sendo muito usada em design e mobiliário.<p>
+                </div>
+                <div class="material">
+                    <h2>Textura superficial</h2>
+                    <br>
+                    <p>A textura superficial refere-se às características da superfície de um material, como rugosidade, aspereza ou suavidade. Ela influencia aspectos como estética, aumentar atrito e captar impacto.<p>
+                </div>
+        </section>
+
+        <section id="tecnicos">
+            <div class="tec">
+                <h3>Integração com o sistema digital &#x1F4BB;</h3>
+                <br>
+                <ul>
+                    <li>Dashboard de monitoramento (web/app)</li>
+                    <li>API de dados em tempo real (JSON/HTTP/MQTT)</li>
+                    <li>Sistema de alertas e relatórios (via nuvem)</li>
+                </ul>
+            </div>
+            <div class="tec">
+                <h3>Observações técnicas &#x1F4A1;</h3>
+                <br>
+                <ul>
+                    <li>O piso precisa garantir <strong>resistência mecânica + flexibilidade</strong> localizada para funcionar bem.</li>
+                    <li>A escolha do encapsulamento deve proteger contra <strong>umidade, oxidação eabrasão.</strong></li>
+                    <li>A eletrônica embarcada deve ser de <strong>baixo consumo energético</strong> para funcionar com a energia gerada localmente.</li>
+                </ul>
+            </div>
+        </section>
     </main>
     <script>
+        function mudouTamanho() {
+                    if (window.innerWidth >=768 ) {
+                        itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+        
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

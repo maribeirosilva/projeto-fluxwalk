@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FluxWalk</title>
-    <link rel="shortcut icon" href="imagens/lampada-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/produto.css">
     <link rel="stylesheet" href="estilos/mobile.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <menu id="itens">
             <ul>
@@ -26,24 +26,21 @@
         <h1 class="titulo-comum">FluxWalk</h1>
         <div class="conteudo-p">
             <h2>Ideia do Projeto</h2>
-            <p class="ideia">A ideia baseia-se no desenvolvimento de um produto alinhado com a tecnologia
-                “piezoelétrica”, desta forma, constitui-se a criação de um literal piso (cerâmica ou
-                porcelanato, por exemplo), que gera energia a partir do movimento humano, integrado com
-                sensores IoT para monitoramento e otimização em tempo real do fluxo de pessoas e da
-                eficiência energética, de maneira sustentável e alinhada à ODS 13 da ONU “Ação contrato a
-                mudança global do clima”, visto que, ao gerar energia limpa é possível reduzir a emissão de
-                gases tóxicos emitidos pela queima de combustíveis fósseis na atmosfera.</p>
-            <h2>Objetivos do projeto</h2>
-            <ul type="square">
-                <li>Geração de energia sustentável a partir do movimento humano</li>
-                <li>Implementação de sensores IoT para monitoramento e otimização em tempo real</li>
-                <li>Aplicação em locais de alta circulação para contribuir para a sustentabilidade e redução de custos com energia</li>
-                <li>Reduzir os impactos da mudança global do clima (ODS 13)</li>
-            </ul>
-
-            <h2 class="pubA">Público-Alvo</h2>
+            <div class="caixa-ideia">
+                <p class="ideia">A ideia baseia-se no desenvolvimento de um produto alinhado com a tecnologia piezoelétrica, por meio da criação de um piso inteligente — como cerâmica ou porcelanato — capaz de gerar energia limpa a partir do movimento humano. Esse sistema será integrado com sensores IoT, permitindo o monitoramento em tempo real da quantidade de energia gerada, além da otimização do fluxo de pessoas e da eficiência energética, de forma sustentável e alinhada à ODS 13 da ONU: “Ação contra a mudança global do clima”. <br> Para garantir a durabilidade do piso e reduzir custos a longo prazo, será essencial investir em materiais piezoelétricos mais resistentes e implementar tecnologias de proteção. Além disso, a utilização dos sensores IoT permitirá a criação de programas de manutenção inteligente, capazes de identificar o desgaste dos componentes e realizar ajustes proativos, prolongando a vida útil do sistema e mantendo sua performance de forma eficiente.</p>
+                <img src="imagens/imagem-mundo-produto.png" alt="">
+            </div>
+            <div class="obj">
+                <h2>Objetivos do projeto</h2>
+                <ul type="none">
+                    <li>- Geração de energia sustentável a partir do movimento humano</li>
+                    <li>- Implementação de sensores IoT para monitoramento e otimização em tempo real</li>
+                    <li>- Aplicação em locais de alta circulação para contribuir para a sustentabilidade e redução de custos com energia</li>
+                    <li>- Reduzir os impactos da mudança global do clima (ODS 13)</li>
+                </ul>
+            </div>
             <ul type="none" class="pubA">
-            <h2>Grandes corporações que gerenciam/constroem locais de grande movimentação e fluxo de pessoas, como:</p>
+            <h3>O público-alvo é composto por, principalmente, grandes corporações que gerenciam/constroem locais de grande movimentação e fluxo de pessoas, como:</h3>
             <li>Aeroportos</li>
             <li>Estações de metrô</li>
             <li>Estádios</li>
@@ -55,6 +52,14 @@
         </div>
     </main>
     <script>
+        function mudouTamanho() {
+                    if (window.innerWidth >=768 ) {
+                        itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+        
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

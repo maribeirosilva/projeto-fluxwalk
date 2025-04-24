@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FluxWalk</title>
-    <link rel="shortcut icon" href="imagens/lampada-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/contato.css">
     <link rel="stylesheet" href="estilos/mobile.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <menu id="itens">
             <ul>
@@ -27,48 +27,64 @@
         <div id="participantes">
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/ana-foto-participante.jpg" alt="Foto da participante Ana Clara.">
-                <p>Ana Clara Gomes da Silva</p>
+                <p class="participante-desc"><strong>Diretora de T.I</strong></p>
+                <p class="participante-desc">Ana Clara Gomes da Silva</p>
                 <a class="botao-contato" target="_blank" href="https://www.linkedin.com/in/ana-clara-gomes-da-silva-b91024282/"><img src="imagens/linkedin-icone.png" alt="Icone do Linkedin"></a>
             </div>
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/giovanna-foto-participante.jpg" alt="Foto da participante Giovanna.">
-                <p>Giovanna dos Santos Ricardo</p>
+                <p class="participante-desc"><strong>Analista de T.I</strong></p>
+                <p class="participante-desc">Giovanna dos Santos Ricardo</p>
                 <a class="botao-contato" target="_blank" href="https://www.linkedin.com/in/giovanna-santos-bb074b345/"><img src="imagens/linkedin-icone.png" alt="Icone do Linkedin"></a>
             </div>
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/gustavo-foto-participante.jpg" alt="Foto da participante Giovanna.">
-                <p>Gustavo</p>
+                <p class="participante-desc"><strong>Diretor de operações</strong></p>
+                <p class="participante-desc">Gustavo</p>
                 <br>
                 <abbr title="tattoogusta@gmail.com"><a class="botao-contato" target="_blank" href="#"><img src="imagens/email-icon.png" alt="Icone do Linkedin"></a></abbr>
             </div>
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/henry-foto-participante.jpg" alt="Foto da participante Giovanna.">
-                <p>Henry Alves Nogueira</p>
+                <p class="participante-desc"><strong>CFO</strong></p>
+                <p class="participante-desc">Henry Alves <br>Nogueira</p>
                 <a class="botao-contato" target="_blank" href="https://www.linkedin.com/in/henry-nogueira-833047246/"><img src="imagens/linkedin-icone.png" alt="Icone do Linkedin"></a>
             </div>
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/izabella-foto-participante.jpg" alt="Foto da participante Giovanna.">
-                <p>Izabella Coutinho Ferraz</p>
+                <p class="participante-desc"><strong>Analista de Vendas</strong></p>
+                <p class="participante-desc">Izabella Coutinho <br>Ferraz</p>
                 <abbr title="Coutinhobella@icloud.com"><a class="botao-contato" target="_blank" href="#"><img src="imagens/email-icon.png" alt="Icone do Linkedin"></a></abbr>
             </div>
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/larissa-foto-participante.jpg" alt="Foto da participante Larissa.">
-                <p>Larissa Bernadelli Clarrocch</p>
+                <p class="participante-desc"><strong>Diretora de Markenting</strong></p>
+                <p class="participante-desc">Larissa Bernadelli Clarrocch</p>
                 <a class="botao-linkedin" target="_blank" href="https://www.linkedin.com/in/larissa-ciarrocchi-a287332b7/"><img src="imagens/linkedin-icone.png" alt="Icone do Linkedin"></a>
             </div>
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/leticia-foto-participante.jpg" alt="Foto da participante Giovanna.">
-                <p>Leticia Missias De Oliveira</p>
+                <p class="participante-desc"><strong>Diretora de Criação</strong></p>
+                <p class="participante-desc">Leticia Missias De Oliveira</p>
                 <abbr title="leticiamissiass2024@gmail.com"><a class="botao-linkedin" target="_blank" href="#"><img src="imagens/email-icon.png" alt="Icone do Linkedin"></a></abbr>
             </div>
             <div class="fundo-participante">
                 <img class="img-p" src="imagens/eduarda-foto-participante.jpg" alt="Foto da participante Giovanna.">
-                <p>Maria Eduarda de Borba Melo</p>
+                <p class="participante-desc"><strong>CEO</strong></p>
+                <p class="participante-desc">Maria Eduarda de Borba Melo</p>
                 <abbr title="emelo4444@gmail.com"><a class="botao-contato" target="_blank" href="#"><img src="imagens/email-icon.png" alt="Icone do Linkedin"></a></abbr>
             </div>
         </div>
     </main>
     <script>
+        function mudouTamanho() {
+                    if (window.innerWidth >=768 ) {
+                        itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+        
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

@@ -9,11 +9,17 @@ main > div#participantes {
 }
 
 main > div#participantes > div.fundo-participante {
-    background-color: #4a5916b9;
+    background-color: rgba(255, 191, 191, 0.452);
+    box-shadow: 2px 2px 9px rgba(160, 13, 13, 0.445);
     padding: 20px;
     text-align: center;
     width: 200px;
     border-radius: 6px;
+}
+
+main p.participante-desc{
+    color: #002279;
+    padding: 5px 0px;
 }
 
 main > div#participantes > div.fundo-participante > img.img-p {
@@ -22,9 +28,10 @@ main > div#participantes > div.fundo-participante > img.img-p {
 }
 
 main > div#participantes > div.fundo-participante > p {
-    padding: 16px;
+    padding: 3px;
 }
 
 main > div#participantes > div.fundo-participante > a.botao-contato {
+    padding-top: 4px;
     width: 100%;
 }

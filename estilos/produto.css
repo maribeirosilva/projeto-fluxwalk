@@ -15,22 +15,43 @@ div.conteudo-p {
     padding: 20px;
 }
 
+div.caixa-ideia {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+img {
+    padding: 20px;
+    height: 250px;
+    margin: auto;
+}
+
 h2 {
     font-size: 23px;
     padding-left: 20px;
     padding-bottom: 12px;
     padding-top: 10px;
+    color: #2f406b;
 }
 
 p.ideia {
+    color: #2f406b;
     font-size: 18px;
-    max-width: 85ch;
     text-align: justify;
     padding-bottom: 15px;
+    max-width: 60ch;
+}
+
+div.obj {
+    background-color: rgba(255, 255, 255, 0.555);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(95, 4, 4, 0.315);
 }
 
 ul {
-    padding-left: 15px;
+    padding-left: 11px;
+    padding-bottom: 10px;
 }
 
 ol {
@@ -38,14 +59,15 @@ ol {
 }
 
 li {
+    padding-left: 10px;
     font-size: 18px;
+    color: #2f406b;
 }
 
 .pubA {
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: var(--corBege);
+    color: #2f406b;;
 }
 
 a.empresa {
@@ -54,8 +76,8 @@ a.empresa {
     transition-duration: .7s;
 }
 
-a:hover {
-    background-color: #5d78bc3f;
-    color: #455ea0;
+a.empresa:hover {
+    background-color: #f11a1a3f;
+    color: #AADEF1;
     border-radius: 7px;
 }

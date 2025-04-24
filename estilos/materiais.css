@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+:root {
+    --corAzulEsc: #002279;
+    --corVer: #FF000B;
+    --corCiano: #AADEF1;
+    --corAzulClaro: #8FA1C6;
+
+
+    --fonte-padrao: 'Lexend Deca', sans-serif;
+    --fonte-destaque: 'Bona Nova SC', serif;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+main > section#peças {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main > section#peças > div.material > h2 {
+    text-align: center;
+}
+
+main > section#peças > div.material {
+    background-color: rgba(255, 255, 255, 0.432);
+    box-shadow: rgba(90, 30, 201, 0.158) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 7px;
+    text-align: justify;
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 300px;  
+}
+
+main > section#peças > div.material:hover {
+    background-color: rgba(255, 255, 255, 0.425);
+    box-shadow: 2px 4px 20px rgba(2, 2, 141, 0.562);
+    transition-duration: .5s;
+}
+
+main > section#tecnicos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+main > section#tecnicos > div.tec > h3 {
+    font-size: 22px;
+}
+
+main > section#tecnicos > div.tec {
+    background-color: var(--corAzulEsc);
+    color: var(--corCiano);
+
+    border-radius: 0px 3px;
+    padding: 30px;
+    margin: 20px;
+    max-width: 40ch;
+    border-radius: 20px 2px 30px 2px;
+}
+
+main > section#tecnicos > div.tec:hover {
+    background-color: #021955;
+    box-shadow: 2px 4px 20px rgba(156, 2, 2, 0.63);
+    transition-duration: .7s;
+}
