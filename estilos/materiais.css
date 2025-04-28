@@ -21,11 +21,11 @@ main > section#peças {
     justify-content: center;
 }
 
-main > section#peças > div.material > h2 {
+main > section#peças > div#material > h2 {
     text-align: center;
 }
 
-main > section#peças > div.material {
+main > section#peças > div#material {
     background-color: rgba(255, 255, 255, 0.432);
     box-shadow: rgba(90, 30, 201, 0.158) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-radius: 7px;
@@ -38,10 +38,42 @@ main > section#peças > div.material {
     flex: 0 1 300px;  
 }
 
-main > section#peças > div.material:hover {
+main > section#peças > div#material:hover {
     background-color: rgba(255, 255, 255, 0.425);
     box-shadow: 2px 4px 20px rgba(2, 2, 141, 0.562);
     transition-duration: .5s;
+}
+
+main > section#peças > div.topUm:hover {
+    background-image: url(../imagens/primeiro-topico-materiais.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff00;
+}
+
+main > section#peças > div.topDois:hover {
+    background: url(../imagens/segundo-topico-materiais.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff00;
+}
+
+main > section#peças > div.topTres:hover {
+    background-image: url(../imagens/terceiro-topico-materiais.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff00;
+}
+
+main > section#peças > div.topQuatro:hover {
+    background-image: url(../imagens/quarto-topico-materiais.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff00;
 }
 
 main > section#tecnicos {
